@@ -25,6 +25,7 @@ public class VideoPreloadManager: NSObject {
     public func set(waiting: [URL]) {
         downloader = nil
         waitingQueue = waiting
+        isAutoStart = true
         if isAutoStart { start() }
     }
     
